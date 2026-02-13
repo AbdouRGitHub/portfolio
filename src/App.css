@@ -7,7 +7,7 @@
   margin: 100px auto;
 }
 
-.profileSection {
+.profile {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@
 
 .name {
   margin-top: 10px;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .description {
@@ -40,5 +40,26 @@
 }
 
 .links{
+  margin-top: 20px;
+}
 
+ul {
+  display: inline-flex;
+  list-style: none;
+  column-gap: 10px;
+}
+
+li {
+  cursor: pointer;
+}
+
+li a {
+  width: 24px;
+  height: 24px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.project {
+  margin-top: 20px;
 }

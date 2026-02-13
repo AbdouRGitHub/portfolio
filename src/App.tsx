@@ -1,12 +1,12 @@
 import './App.css';
-
+import {GithubIcon, LinkedinIcon} from 'lucide-react';
 
 function App() {
 
     return (
         <>
             <main className="app">
-                <div className="profileSection">
+                <div className="profile">
                     <div className="photoContainer">
                         <img src="/photo.jpg" alt="photo" className="photo"/>
                     </div>
@@ -16,14 +16,23 @@ function App() {
                         domaine de la santé,
                         je conçois des applications web utilisant des technologies comme NestJS, Spring et React.
                     </p>
-                    <nav>
+                    <nav className="links">
                         <ul>
                             <li>
-
+                                <a href="https://github.com/AbdouRGitHub">
+                                    <GithubIcon/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/abdou-rahmane-sani/">
+                                    <LinkedinIcon/>
+                                </a>
                             </li>
                         </ul>
                     </nav>
                 </div>
+                <section className="project">
+                </section>
             </main>
             <footer></footer>
         </>
