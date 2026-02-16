@@ -1,5 +1,6 @@
 import './App.css';
 import {GithubIcon, LinkedinIcon} from 'lucide-react';
+import ProjectCard from './components/ProjectCard';
 
 function App() {
 
@@ -12,7 +13,7 @@ function App() {
                     </div>
                     <h1 className="name">Abdou-Rahmane</h1>
                     <p className="description">
-                        Développeur fullstack avec 2 ans d’expérience en backend dans une ad tech spécialisé dans le
+                        Développeur fullstack avec 2 ans d'expérience en backend dans une ad tech spécialisé dans le
                         domaine de la santé,
                         je conçois des applications web utilisant des technologies comme NestJS, Spring et React.
                     </p>
@@ -32,6 +33,13 @@ function App() {
                     </nav>
                 </div>
                 <section className="project">
+                    <h2 className="section-title">Projets</h2>
+                    <ProjectCard
+                        image="/m.jpg"
+                        title="Microblogging"
+                        description="Une application de microblogging inspiré de X (ex Twitter) et Bluesky, développé sous Spring Boot et React."
+                        stack={['spring', 'react', 'javascript', 'typescript', 'java']}
+                    />
                 </section>
             </main>
             <footer></footer>

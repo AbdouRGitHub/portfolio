@@ -1,65 +1,135 @@
 .app {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 1000px;
-  min-height: 100vh;
-  margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 1000px;
+    min-height: 100vh;
+    margin: 80px auto;
 }
 
 .profile {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .photoContainer {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid lightgrey;
 }
 
 .photo {
-  width: 100%;
-  height: 100%;
-  border-radius: 2px;
-  object-fit: cover;
-  border: 1px solid lightgrey;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .name {
-  margin-top: 10px;
-  font-weight: bolder;
+    margin-top: 10px;
+    font-weight: bolder;
 }
 
 .description {
-  margin-top: 5px;
-  color: rgb(124, 124, 124);
-  text-align: center;
+    margin-top: 5px;
+    color: grey;
+    text-align: center;
 }
 
-.links{
-  margin-top: 20px;
+.links {
+    margin-top: 20px;
 }
 
 ul {
-  display: inline-flex;
-  list-style: none;
-  column-gap: 10px;
+    display: inline-flex;
+    list-style: none;
+    column-gap: 10px;
 }
 
 li {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 li a {
-  width: 24px;
-  height: 24px;
-  color: inherit;
-  text-decoration: none;
+    width: 24px;
+    height: 24px;
+    color: inherit;
+    text-decoration: none;
 }
 
 .project {
-  margin-top: 20px;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-title {
+    align-self: flex-start;
+}
+
+.project-card {
+    background-color: #202020;
+    width: 100%;
+    display: flex;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.project-image {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: grey;
+}
+
+.project-stack {
+    display: inline-flex;
+    list-style: none;
+    column-gap: 5px;
+    padding-top: 12px;
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+}
+
+.stack-item {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: 1px solid #3a3a3a;
+}
+
+.stack-logo {
+    width: 50%;
+    filter: brightness(0) invert(1);
 }
