@@ -4,7 +4,7 @@ interface StackIconProps {
 
 function StackIcon({name}: StackIconProps) {
     return (
-        <div className="stack-item">
+        <div className="stack-item" data-tooltip={name}>
             <img
                 src={`/stack-icon/${name}.svg`}
                 alt={name}
