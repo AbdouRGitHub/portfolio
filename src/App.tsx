@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import {GithubIcon, LinkedinIcon} from 'lucide-react';
 import ProjectCard from './components/ProjectCard';
 

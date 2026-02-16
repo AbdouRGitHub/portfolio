@@ -1,4 +1,5 @@
 import StackIcon from './StackIcon';
+import '../styles/ProjectCard.css';
 
 interface ProjectCardProps {
     image: string;

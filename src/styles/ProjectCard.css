@@ -1,0 +1,59 @@
+.project-card {
+    background-color: #202020;
+    width: 100%;
+    display: flex;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.project-image {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.project-title {
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: grey;
+}
+
+.project-stack {
+    display: inline-flex;
+    list-style: none;
+    column-gap: 5px;
+    padding-top: 12px;
+    border-top: 1px solid #3a3a3a;
+    width: 100%;
+}
+
+.stack-item {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border: 1px solid #3a3a3a;
+}
+
+.stack-logo {
+    width: 50%;
+    filter: brightness(0) invert(1);
+}
