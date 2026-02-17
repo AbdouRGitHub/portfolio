@@ -35,11 +35,16 @@ function App() {
                 <section className="project">
                     <h2 className="section-title">Projets</h2>
                     <ProjectCard
-                        image="/m.jpg"
+                        image="m.png"
                         title="Microblogging"
                         description="Une application de microblogging inspiré de X (ex Twitter) et Bluesky, développé sous Spring Boot et React."
                         stack={['spring', 'react', 'javascript', 'typescript', 'java']}
                     />
+                    <ProjectCard
+                        image="swap_circle.png"
+                        title="Swap Circle"
+                        description="Application mobile permettant le prêt entre voisins, amis ou autres avec un système de caution permettant la sécurisation des échanges."
+                        stack={['nestjs', 'expo']}/>
                 </section>
             </main>
             <footer></footer>

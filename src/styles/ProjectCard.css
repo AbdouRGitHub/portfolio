@@ -1,6 +1,7 @@
 .project-card {
     background-color: #202020;
     width: 100%;
+    max-height: 200px;
     display: flex;
     border: 1px solid #3a3a3a;
     border-radius: 10px;
@@ -18,7 +19,6 @@
 
 .project-image {
     width: 30%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -62,25 +62,24 @@
     cursor: pointer;
 }
 
-.stack-item::after {
-    content: attr(data-tooltip);
+.stack-tooltip {
+    visibility: hidden;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    white-space: nowrap;
     position: absolute;
     bottom: 110%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: white;
-    color: black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.75rem;
-    white-space: nowrap;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    z-index: 1;
 }
 
-.stack-item:hover::after {
-    opacity: 1;
+.stack-item:hover .stack-tooltip {
+    visibility: visible;
 }
 
 .stack-logo {
